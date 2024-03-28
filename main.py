@@ -28,7 +28,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = tf.keras.models.load_model("./model_vgg19.h5")
+model = tf.keras.models.load_model("./bestmodel_vgg19.h5")
 
 def model_predict(img, model):
     if not isinstance(img, Image.Image):
